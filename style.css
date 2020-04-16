@@ -1,0 +1,219 @@
+@font-face { /* police que je souhaites utiliser */
+    font-family: 'caviar_dreams';
+    src: url('font/CaviarDreams-webfont.eot');
+    src: url('font/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/CaviarDreams-webfont.woff2') format('woff2'),
+         url('font/CaviarDreams-webfont.woff') format('woff'),
+         url('font/CaviarDreams-webfont.ttf') format('truetype'),
+         url('font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+}
+
+
+ 										/* PAGE */
+body{
+	max-width: 1200px;
+	margin: auto;
+	border: 2px #546E7A solid;
+	font-family: caviar_dreams;
+	font-size: 1.2em;
+}
+
+									 /* CONTENANT */
+.container{
+	display: flex;
+}
+
+									 /* ----------PARTIE GAUCHE---------- */
+.left{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	width: 30%;
+	background-color: #263238;
+}
+
+.left aside{
+	width: 100%;
+}
+
+.left aside:nth-child(3){
+	flex: 1;
+}
+
+
+ 										/* CENTRAGE AVATAR */
+.avatar{
+	text-align: center;
+	margin: 50px 0 30px 0;
+}
+								 /* MODIF AVATAR IMG */
+.avatar img{
+	width: 220px;
+	height: 220px;
+	border: 2px #00BCD4 solid;
+	border-radius: 250px 250px 250px 250px;
+}
+
+									 /* TITRE DES MES SECTIONS GAUCHE */
+.left h2{
+	text-align: center;
+	color: #263238;
+	background-color: #00BCD4;
+	padding: 2px 0 2px 0;
+	font-size: 1.2em;
+}
+
+										/* Paragraphes bloc gauche */
+.left p{
+	padding: 30px 50px 0 50px;
+}
+
+.contact a{
+	color: white;
+	text-decoration: none;
+}
+
+.contact a:hover{
+	color: #00BCD4;
+}
+
+.loisirs {
+	text-align: center;
+}
+
+.loisirs img{
+	margin: 25px 10px 30px 10px;
+	border: 2px white solid;
+	border-radius: 50%;
+}
+
+
+ 										/* ----------PARTIE DROITE---------- */
+.right{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+										/* header */
+
+header{
+	margin: 50px 20px 100px 60px;
+}
+
+header h1{
+	margin: 15px 0 10px 0;
+	font-size: 2.3em;
+}
+
+header h1 span{
+	color: #00BCD4;
+}
+
+header h2{
+	margin: 5px 0 10px 0;
+	font-size: 1.7em;
+}
+
+header h2 span{
+	border-bottom: 2px #00BCD4 solid;
+}
+
+										/* logos */
+.logo{
+	margin-right: 25px;
+}
+										/* titres des blocs */
+.title_right{
+	margin: 10px 20px 15px 60px;
+	padding-bottom: 10px;
+	border-bottom: 3px #00BCD4 solid;
+}
+
+
+										/* bloc formation */
+.bloc_formation{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 30px 20px 100px 60px;
+}
+
+.formation_gauche{
+	display: flex;
+	width: 25%;
+	padding-top: 0;
+	margin-top: 30px;
+}
+
+.formation_gauche h6{
+	margin-top: 2px;
+}
+
+.formation_gauche i{
+	margin: 5px 10px 5px 0;
+}
+.formation_droite{
+	width: 65%;
+	padding-top: 0;
+	margin-top: 30px;
+}
+
+.formation_droite h4, h5{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+
+										/* bloc expérience */
+.bloc_experience{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 30px 20px 100px 60px;
+}
+
+.experience_gauche{
+	display: flex;
+	width: 25%;
+	margin-top: 30px;
+}
+
+.experience_gauche h6{
+	margin-top: 0;
+}
+
+.experience_gauche i{
+	margin: 5px 10px 5px 0;
+}
+
+.experience_droite{
+	width: 65%;
+	margin-top:  30px;
+}
+
+.experience_droite h4, h5{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+										/* bloc recommandation */
+.bloc_recommandation{
+	display: flex;
+	justify-content: space-around;
+	margin: 30px 20px 40px 60px;
+}
+
+.bloc_recommandation h4{
+	margin-bottom: 10px;
+}
+
+.bloc_recommandation h5{
+	margin-bottom: 20px;
+}
+.bloc_recommandation p{
+	margin: 5px 0 0 0;
+}
+
+
+						/* -------------------RESPONSIVE---------------------*/
