@@ -11,7 +11,7 @@
 
  										/* PAGE */
 body{
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: auto;
 	border: 2px #546E7A solid;
 	font-family: caviar_dreams;
@@ -32,6 +32,7 @@ body{
 	background-color: #263238;
 }
 
+										/* Setting aside partie gauche */
 .left aside{
 	width: 100%;
 }
@@ -41,12 +42,12 @@ body{
 }
 
 
- 										/* CENTRAGE AVATAR */
+ 										/* Centrage / taille / bordure avatar */
 .avatar{
 	text-align: center;
 	margin: 50px 0 30px 0;
 }
-								 /* MODIF AVATAR IMG */
+
 .avatar img{
 	width: 220px;
 	height: 220px;
@@ -54,7 +55,7 @@ body{
 	border-radius: 250px 250px 250px 250px;
 }
 
-									 /* TITRE DES MES SECTIONS GAUCHE */
+									 /* Titres des asides gauche */
 .left h2{
 	text-align: center;
 	color: #263238;
@@ -68,6 +69,7 @@ body{
 	padding: 30px 50px 0 50px;
 }
 
+									 /* Liens barre gauche */
 .contact a{
 	color: white;
 	text-decoration: none;
@@ -77,6 +79,7 @@ body{
 	color: #00BCD4;
 }
 
+									 /* Icones Loisirs */
 .loisirs {
 	text-align: center;
 }
@@ -119,11 +122,11 @@ header h2 span{
 	border-bottom: 2px #00BCD4 solid;
 }
 
-										/* logos */
+										/* logos sections droite */
 .logo{
 	margin-right: 25px;
 }
-										/* titres des blocs */
+										/* titres des sections */
 .title_right{
 	margin: 10px 20px 15px 60px;
 	padding-bottom: 10px;
@@ -139,6 +142,7 @@ header h2 span{
 	margin: 30px 20px 100px 60px;
 }
 
+										/* bloc formation gauche */
 .formation_gauche{
 	display: flex;
 	width: 25%;
@@ -153,6 +157,8 @@ header h2 span{
 .formation_gauche i{
 	margin: 5px 10px 5px 0;
 }
+
+										/* bloc formation droite */
 .formation_droite{
 	width: 65%;
 	padding-top: 0;
@@ -173,6 +179,7 @@ header h2 span{
 	margin: 30px 20px 100px 60px;
 }
 
+										/* bloc experience gauche */
 .experience_gauche{
 	display: flex;
 	width: 25%;
@@ -187,6 +194,7 @@ header h2 span{
 	margin: 5px 10px 5px 0;
 }
 
+										/* bloc experience droite */
 .experience_droite{
 	width: 65%;
 	margin-top:  30px;
@@ -216,4 +224,139 @@ header h2 span{
 }
 
 
+
+
 						/* -------------------RESPONSIVE---------------------*/
+
+
+
+@media screen and (max-width: 1024px)
+{
+	.container
+	{
+		width: auto;
+		flex-direction: column;
+	}
+
+								/* ------ Bloc Gauche ----- */
+	.left
+	{
+		order: 2;
+		width: 100%;
+	}
+
+	.avatar img
+	{
+		max-width: 150px;
+		max-height: 150px;
+	}
+
+	.left h2
+	{
+		font-size: 1em;
+	}
+
+	.contact p
+	{
+		text-align: center;
+	}
+
+	.left p
+	{
+		font-size: 0.9em;
+		padding: 10px 5px 0 5px;
+	}
+
+	.loisirs img
+	{
+		max-width: 40px;
+		max-height: 40px;
+	}
+
+								/* ------ Bloc Droit ----- */
+	.right
+	{
+		order: 1;
+		width: 100%;
+	}
+
+	header
+	{
+		text-align: center;
+		margin: 10px 5px 40px 10px;
+	}
+
+	header h1{
+		margin: 15px 0 10px 0;
+		font-size: 1.8em;
+	}
+	
+	header h1 span{
+		color: #00BCD4;
+	}
+	
+	header h2{
+		margin: 5px 0 10px 0;
+		font-size: 1.2em;
+	}
+
+	.title_right
+	{
+		text-align: center;
+		font-size: 1em;
+		margin: 5px 5px 5px 5px;
+	}
+
+	.maincontain .bloc_formation
+	{
+		margin: 5px 0 20px 0;
+	}
+
+	.formation_gauche
+	{
+		margin: 5px 0 5px 0;
+	}
+	
+	.formation_droite
+	{
+		margin: 5px 0 5px 0;
+	}
+
+	.maincontain .bloc_experience
+	{
+		margin: 5px 0 20px 0;
+	}
+
+	.maincontain .bloc_recommandation
+	{
+		flex-direction: column;
+		text-align: center;
+		margin: 5px 0 20px 0;
+	}
+	
+	.bloc_recommandation strong
+	{
+		font-size: 0.7em;
+	}
+	.maincontain h4
+	{
+		font-size: 0.8em;
+	}
+
+	.maincontain h5
+	{
+		font-size: 0.7em;
+	}
+
+	.maincontain h6
+	{
+		font-size: 0.6em;
+	}
+
+	.maincontain p
+	{
+		font-size: 0.8em;
+	}
+
+
+}
