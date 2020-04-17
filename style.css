@@ -11,7 +11,6 @@
 
  										/* PAGE */
 body{
-	max-width: 1280px;
 	margin: auto;
 	border: 2px #546E7A solid;
 	font-family: caviar_dreams;
@@ -45,7 +44,7 @@ body{
  										/* Centrage / taille / bordure avatar */
 .avatar{
 	text-align: center;
-	margin: 50px 0 30px 0;
+	margin: 50px 0 50px 0;
 }
 
 .avatar img{
@@ -58,6 +57,7 @@ body{
 									 /* Titres des asides gauche */
 .left h2{
 	text-align: center;
+	margin-top: 0;
 	color: #263238;
 	background-color: #00BCD4;
 	padding: 2px 0 2px 0;
@@ -66,7 +66,7 @@ body{
 
 										/* Paragraphes bloc gauche */
 .left p{
-	padding: 30px 50px 0 50px;
+	padding: 10px 50px 10px 50px;
 }
 
 									 /* Liens barre gauche */
@@ -102,6 +102,11 @@ body{
 
 header{
 	margin: 50px 20px 100px 60px;
+}
+
+#photo 
+{
+	display: none;
 }
 
 header h1{
@@ -245,12 +250,15 @@ header h2 span{
 		width: 100%;
 	}
 
-	.avatar img
+
+								/* ------ Avatar gauche none ----- */
+	.avatar
 	{
-		max-width: 150px;
-		max-height: 150px;
+		display: none;
 	}
 
+
+								/* ------ Taille et alignement Paragrahes Bloc Gauche ----- */
 	.left h2
 	{
 		font-size: 1em;
@@ -264,9 +272,11 @@ header h2 span{
 	.left p
 	{
 		font-size: 0.9em;
-		padding: 10px 5px 0 5px;
+		padding: 5px 5px 5px 5px;
 	}
 
+
+								/* ------ Taille icones bloc gauche ----- */
 	.loisirs img
 	{
 		max-width: 40px;
@@ -278,6 +288,25 @@ header h2 span{
 	{
 		order: 1;
 		width: 100%;
+	}
+	
+
+								/* ------ Photo en haut centrre de ma page ----- */
+	#photo_right 
+	{
+		text-align: center;
+	}
+
+	#photo_right img{
+		display: block;
+		width: 150px;
+		height: 150px;
+		margin: auto;
+		border: 2px #00BCD4 solid;
+		border-radius: 250px 250px 250px 250px;
+
+
+								/* ------ Header ----- */
 	}
 
 	header
@@ -300,26 +329,27 @@ header h2 span{
 		font-size: 1.2em;
 	}
 
+
+								/* ------ Titre de mes blocs de droite ----- */
 	.title_right
 	{
 		text-align: center;
+		white-space: nowrap;
 		font-size: 1em;
 		margin: 5px 5px 5px 5px;
 	}
 
+
+								/* ------ Marge de mes logos Bloc droit ----- */
+	.logo{
+	margin-right: 10px;
+	}
+		
+
+								/* ------ Maincontain Droite ----- */		
 	.maincontain .bloc_formation
 	{
 		margin: 5px 0 20px 0;
-	}
-
-	.formation_gauche
-	{
-		margin: 5px 0 5px 0;
-	}
-	
-	.formation_droite
-	{
-		margin: 5px 0 5px 0;
 	}
 
 	.maincontain .bloc_experience
@@ -334,10 +364,6 @@ header h2 span{
 		margin: 5px 0 20px 0;
 	}
 	
-	.bloc_recommandation strong
-	{
-		font-size: 0.7em;
-	}
 	.maincontain h4
 	{
 		font-size: 0.8em;
@@ -356,6 +382,33 @@ header h2 span{
 	.maincontain p
 	{
 		font-size: 0.8em;
+	}
+
+
+								/* ------ Marges bloc formation/experiences/recommandations ----- */
+	.formation_gauche
+	{
+		margin: 5px 0 5px 0;
+	}
+	
+	.formation_droite
+	{
+		margin: 5px 0 5px 0;
+	}
+
+	.experience_gauche
+	{
+		margin: 5px 0 5px 0;
+	}
+	
+	.experience_droite
+	{
+		margin: 5px 0 5px 0;
+	}
+
+	.bloc_recommandation strong
+	{
+		font-size: 0.7em;
 	}
 
 

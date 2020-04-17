@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="CV Roussarie tony">
 	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-	<meta http-equiv="Content-Language" content="fr">
 	<meta name="author" content="Roussarie Tony">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/6bc9113a6b.js" crossorigin="anonymous"></script>
@@ -19,12 +18,12 @@
 									<!----------BLOC GAUCHE---------->
 		<section class="left">				
 			
-				<aside class="avatar">
-					<a href="image/tony.jpg"><img class="photo" src="image/tony_mini.jpg" alt="Tony Roussarie" title="Photo de profil" /></a>
-				</aside>
+				<section class="avatar">
+					<a href="image/tony.jpg"><img src="image/tony_mini.jpg" alt="Tony Roussarie" title="Photo de profil" /></a>
+				</section>
 										<!----------contact---------->		
 
-				<aside class="contact">								
+				<section class="contact">								
 					<h2>CONTACT</h2>
 						<p>Adresse<br />
 						1 route des écoles,<br />
@@ -35,32 +34,36 @@
 						<a href="mailto"tony.roussarie@mail.com>tony.roussarie@gmail.com</a></p>
 						<p>Skype<br />
 						<a href="https://join.skype.com/invite/gBAggefI8YKT">Seykath</a></p>
-				</aside>
+				</section>
 										<!----------a propos---------->
-				</aside>
+				</section>
 										<!----------a propos---------->
 
-				<aside class="a_propos">							
+				<section class="a_propos">							
 					<h2>À PROPOS DE MOI</h2>
 					<p>Après six années de tournage/fraisage j'ai démissionné pour me ré-orienter professionnellement.</p>
 					<P>J'ai donc par la suite, passé trois années à faire des jobs en intérim, avant d'avoir l'opportunité de reprendre une formation de développeur web que j'avais entrepris à la fin de ma scolarité en contrat de professionnalisation.</p>
 					<p> J'ai repris les "bancs de l'école" pour suivre une formation de développeur web et vivre de ce métier dans lequel je suis épanoui au quotidien.</p>
-				</aside>		
+				</section>		
 										<!----------loisirs---------->			
 
-				<aside class="loisirs">								
+				<section class="loisirs">								
 					<h2>LOISIRS</h2>
 					<div class="fa-loisirs">
 						<img src="image/manette.png" alt="logo_manette"/>
 						<img src="image/trekking.png" alt="logo_randonné" />
 						<img src="image/moto.png" alt="logo_moto" />
 					</div>
-				</aside>
+				</section>
 		</section>
 									<!----------BLOC DROIT---------->
 
-		<section class="right">					
+		<main class="right">					
 			<header>
+				<div id="photo_right">
+				<a href="image/tony.jpg"><img id="photo" src="image/tony_mini.jpg" alt="Tony Roussarie" title="Photo de profil" /></a>
+				</div>
+
 				<h1><span>TONY</span> ROUSSARIE</h1>
 				<h2><span>Dévelo</span>ppeur Web</h2>
 			</header>
@@ -142,7 +145,7 @@
 							<div class="experience_droite">
 								<h4>PLACOPLATRE</h4>
 								<h5>Cariste</h5>
-								<p>Ma mission principale en tant que cariste consisté à stocker des plaques de plâtres une fois sorties de production. J'ai également été formé par la suite sur la chaîne de production, réglages des différents éléments en fonction du type de plaques produits, prélèvement et contrôle des échantillons.</p>
+								<p>Ma mission principale en tant que cariste consistait à stocker des plaques de plâtres une fois sorties de production. J'ai également été formé par la suite sur la chaîne de production, réglages des différents éléments en fonction du type de plaques produits, prélèvement et contrôle des échantillons.</p>
 							</div>
 
 							<div class="experience_gauche">
@@ -192,7 +195,7 @@
 						</div>
 				</section>
 
-				<section>
+				<footer>
 					<h3 class="title_right"><span class="logo"><i class="fas fa-pen fa-lg" style="color:#00BCD4"></i></span>RECOMMANDATIONS</h3>
 
 						<div class="bloc_recommandation">
@@ -211,9 +214,9 @@
 								<p><strong>Email</strong> : name@email.com</p>
 							</div>
 						</div>
-				</section>
+				</footer>
 			</div>	
-		</section>
+		</main>
 	</div>
 </body>
 </html>
