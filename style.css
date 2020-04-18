@@ -32,11 +32,11 @@ body{
 }
 
 										/* Setting aside partie gauche */
-.left aside{
+.left section{
 	width: 100%;
 }
 
-.left aside:nth-child(3){
+.left section:nth-child(3){
 	flex: 1;
 }
 
@@ -138,6 +138,10 @@ header h2 span{
 	border-bottom: 3px #00BCD4 solid;
 }
 
+.right i{
+	color: #00BCD4;
+}
+
 
 										/* bloc formation */
 .bloc_formation{
@@ -156,11 +160,11 @@ header h2 span{
 }
 
 .formation_gauche h6{
-	margin-top: 2px;
+	margin: 2px 0 2px 0;
 }
 
 .formation_gauche i{
-	margin: 5px 10px 5px 0;
+	margin: 5px 10px 2px 0;
 }
 
 										/* bloc formation droite */
@@ -192,7 +196,7 @@ header h2 span{
 }
 
 .experience_gauche h6{
-	margin-top: 0;
+	margin: 2px 0 2px 0;
 }
 
 .experience_gauche i{
@@ -338,7 +342,6 @@ header h2 span{
 		font-size: 1em;
 		margin: 5px 5px 5px 5px;
 	}
-
 
 								/* ------ Marge de mes logos Bloc droit ----- */
 	.logo{
