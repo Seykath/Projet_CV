@@ -13,7 +13,7 @@
 body{
 	margin: auto;
 	border: 2px #546E7A solid;
-	font-family: caviar_dreams;
+	font-family: caviar_dreams, 'Trebuchet sans ms', Arial, sans-serif;
 	font-size: 1.2em;
 }
 
@@ -32,11 +32,11 @@ body{
 }
 
 										/* Setting aside partie gauche */
-.left aside{
+.left section{
 	width: 100%;
 }
 
-.left aside:nth-child(3){
+.left section:nth-child(3){
 	flex: 1;
 }
 
@@ -138,11 +138,14 @@ header h2 span{
 	border-bottom: 3px #00BCD4 solid;
 }
 
+.right i{
+	color: #00BCD4;
+}
+
 
 										/* bloc formation */
 .bloc_formation{
 	display: flex;
-	justify-content: space-around;
 	flex-wrap: wrap;
 	margin: 30px 20px 100px 60px;
 }
@@ -151,35 +154,40 @@ header h2 span{
 .formation_gauche{
 	display: flex;
 	width: 25%;
-	padding-top: 0;
+	margin-left: 2%;
 	margin-top: 30px;
 }
 
 .formation_gauche h6{
-	margin-top: 2px;
+	margin: 2px 0 2px 0;
 }
 
 .formation_gauche i{
-	margin: 5px 10px 5px 0;
+	margin: 5px 10px 2px 0;
 }
 
 										/* bloc formation droite */
 .formation_droite{
 	width: 65%;
-	padding-top: 0;
 	margin-top: 30px;
 }
 
 .formation_droite h4, h5{
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin: 2px 0 2px 0;
 }
+
+.description{
+	width: 65%;
+	margin-left: 27%;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
 
 
 										/* bloc expérience */
 .bloc_experience{
 	display: flex;
-	justify-content: space-around;
 	flex-wrap: wrap;
 	margin: 30px 20px 100px 60px;
 }
@@ -188,11 +196,12 @@ header h2 span{
 .experience_gauche{
 	display: flex;
 	width: 25%;
+	margin-left: 2%;
 	margin-top: 30px;
 }
 
 .experience_gauche h6{
-	margin-top: 0;
+	margin: 2px 0 2px;
 }
 
 .experience_gauche i{
@@ -225,17 +234,52 @@ header h2 span{
 	margin-bottom: 20px;
 }
 .bloc_recommandation p{
-	margin: 5px 0 0 0;
+	margin-top: 5px;
 }
 
 
 
 
-						/* -------------------RESPONSIVE---------------------*/
-
-
+															/* -------------------RESPONSIVE---------------------*/
 
 @media screen and (max-width: 1024px)
+{
+	.container
+	{
+		width: auto;
+	}
+
+	.left
+	{
+		width: 40%;
+	}
+
+	.right
+	{
+		width: 60%;
+	}
+
+	.description{
+		width: 100%;
+		margin-left: 2%;
+		font-size: 1em;
+		padding: 0;
+	}
+
+	.formation_droite{
+		margin-left: 30px;
+	}
+
+	.experience_droite{
+		margin-left: 30px;
+	}
+
+}
+
+
+										/* RESPONSIVE SMARTPHONE */
+
+@media screen and (max-width: 720px)
 {
 	.container
 	{
@@ -336,9 +380,8 @@ header h2 span{
 		text-align: center;
 		white-space: nowrap;
 		font-size: 1em;
-		margin: 5px 5px 5px 5px;
+		margin: 15px 5px 25px 5px;
 	}
-
 
 								/* ------ Marge de mes logos Bloc droit ----- */
 	.logo{
@@ -388,22 +431,27 @@ header h2 span{
 								/* ------ Marges bloc formation/experiences/recommandations ----- */
 	.formation_gauche
 	{
-		margin: 5px 0 5px 0;
+		margin: 20px 0 0 5px;
 	}
 	
 	.formation_droite
 	{
-		margin: 5px 0 5px 0;
+		margin: 20px 0 0 20px;
+	}
+
+	.description{
+		font-size: 1em;
+		margin: 0 2px 10px 5px;
 	}
 
 	.experience_gauche
 	{
-		margin: 5px 0 5px 0;
+		margin: 20px 0 0 5px;
 	}
 	
 	.experience_droite
 	{
-		margin: 5px 0 5px 0;
+		margin: 20px 0 0 20px;
 	}
 
 	.bloc_recommandation strong
@@ -413,3 +461,5 @@ header h2 span{
 
 
 }
+
+media
