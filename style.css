@@ -1,463 +1,369 @@
-@font-face { /* police que je souhaites utiliser */
-    font-family: 'caviar_dreams';
-    src: url('font/CaviarDreams-webfont.eot');
-    src: url('font/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/CaviarDreams-webfont.woff2') format('woff2'),
-         url('font/CaviarDreams-webfont.woff') format('woff'),
-         url('font/CaviarDreams-webfont.ttf') format('truetype'),
-         url('font/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+@font-face {
+  /* police titres */
+  font-family: "Viga";
+  src: url("font/Viga-Regular.ttf") format("truetype");
 }
 
-
- 										/* PAGE */
-body{
-	margin: auto;
-	border: 2px #546E7A solid;
-	font-family: caviar_dreams, 'Trebuchet sans ms', Arial, sans-serif;
-	font-size: 1.2em;
+@font-face {
+  /* police texte */
+  font-family: "Baloo";
+  src: url("font/BalooPaaji2-Regular.ttf") format("truetype");
 }
 
-									 /* CONTENANT */
-.container{
-	display: flex;
+/* PAGE */
+body {
+  margin: auto;
+  border: 2px #546e7a solid;
+  font-family: "Baloo", "Trebuchet sans ms", Arial, sans-serif;
+  font-size: 1.4em;
 }
 
-									 /* ----------PARTIE GAUCHE---------- */
-.left{
-	display: flex;
-	flex-direction: column;
-	color: white;
-	width: 30%;
-	background-color: #263238;
+body h1,
+h2,
+h3 {
+  font-family: "Viga", "Trebuchet sans ms", Arial, sans-serif;
 }
 
-										/* Setting aside partie gauche */
-.left section{
-	width: 100%;
+body h3,
+h4,
+h5 {
+  color: #263238;
 }
 
-.left section:nth-child(3){
-	flex: 1;
+/* CONTENANT */
+.container {
+  display: flex;
 }
 
-
- 										/* Centrage / taille / bordure avatar */
-.avatar{
-	text-align: center;
-	margin: 50px 0 50px 0;
+/* ----------BLOC GAUCHE---------- */
+.contain-left {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 30%;
+  background-color: #263238;
 }
 
-.avatar img{
-	width: 220px;
-	height: 220px;
-	border: 2px #00BCD4 solid;
-	border-radius: 250px 250px 250px 250px;
+/* Aside avatar */
+.avatar {
+  text-align: center;
+  margin: 50px 0 50px 0;
 }
 
-									 /* Titres des asides gauche */
-.left h2{
-	text-align: center;
-	margin-top: 0;
-	color: #263238;
-	background-color: #00BCD4;
-	padding: 2px 0 2px 0;
-	font-size: 1.2em;
+.avatar img {
+  width: 220px;
+  height: 220px;
+  border: 2px #00bcd4 solid;
+  border-radius: 250px 250px 250px 250px;
 }
 
-										/* Paragraphes bloc gauche */
-.left p{
-	padding: 10px 50px 10px 50px;
+.contain-left section {
+  width: 100%;
 }
 
-									 /* Liens barre gauche */
-.contact a{
-	color: white;
-	text-decoration: none;
+.contain-left section:nth-child(3) {
+  flex: 1;
 }
 
-.contact a:hover{
-	color: #00BCD4;
+/* Titres des asides gauche */
+.contain-left h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #263238;
+  background-color: #00bcd4;
+  padding: 2px 0 2px 0;
 }
 
-									 /* Icones Loisirs */
+/* Paragraphes bloc gauche */
+.contain-left p {
+  padding: 10px 50px 10px 50px;
+}
+
+/* Liens barre gauche */
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #00bcd4;
+}
+
+/* Icones Loisirs */
 .loisirs {
-	text-align: center;
+  text-align: center;
 }
 
-.loisirs img{
-	margin: 25px 10px 30px 10px;
-	border: 2px white solid;
-	border-radius: 50%;
+.loisirs img {
+  margin: 25px 10px 30px 10px;
+  border: 2px white solid;
+  border-radius: 50%;
 }
 
-
- 										/* ----------PARTIE DROITE---------- */
-.right{
-	display: flex;
-	flex-direction: column;
-	width: 70%;
+/* ----------BLOC DROIT---------- */
+.contain-right {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
 }
 
-										/* header */
-
-header{
-	margin: 50px 20px 100px 60px;
+/* header */
+#photo {
+  display: none;
 }
 
-#photo 
-{
-	display: none;
+header {
+  margin: 8% 4% 10% 4%;
 }
 
-header h1{
-	margin: 15px 0 10px 0;
-	font-size: 2.3em;
+header h1 {
+  margin: 15px 0 10px 0;
+  font-size: 3em;
 }
 
-header h1 span{
-	color: #00BCD4;
+header h1 span {
+  color: #00bcd4;
 }
 
-header h2{
-	margin: 5px 0 10px 0;
-	font-size: 1.7em;
+header h3 {
+  margin: 5px 0 10px 0;
+  color: #263238;
 }
 
-header h2 span{
-	border-bottom: 2px #00BCD4 solid;
+header h3 span {
+  border-bottom: 2px #00bcd4 solid;
 }
 
-										/* logos sections droite */
-.logo{
-	margin-right: 25px;
-}
-										/* titres des sections */
-.title_right{
-	margin: 10px 20px 15px 60px;
-	padding-bottom: 10px;
-	border-bottom: 3px #00BCD4 solid;
+.contain-right section {
+  margin: 0 4% 1% 4%;
 }
 
-.right i{
-	color: #00BCD4;
+/* COULEURS icon-title */
+.contain-right i {
+  color: #00bcd4;
 }
 
-
-										/* bloc formation */
-.bloc_formation{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 30px 20px 100px 60px;
+/* icon-titles sections droite */
+.icon-title {
+  margin-right: 25px;
 }
 
-										/* bloc formation gauche */
-.formation_gauche{
-	display: flex;
-	width: 25%;
-	margin-left: 2%;
-	margin-top: 30px;
+/* titres des sections */
+.title_right {
+  margin: 2% 0 6% 0;
+  padding-bottom: 10px;
+  border-bottom: 3px #00bcd4 solid;
 }
 
-.formation_gauche h6{
-	margin: 2px 0 2px 0;
+/* icônes */
+.icon {
+  margin-right: 10px;
 }
 
-.formation_gauche i{
-	margin: 5px 10px 2px 0;
+.gauche {
+  width: 25%;
+  margin-right: 25px;
+}
+.date {
+  display: flex;
+  margin-top: 0;
 }
 
-										/* bloc formation droite */
-.formation_droite{
-	width: 65%;
-	margin-top: 30px;
+.droite {
+  width: 75%;
+  margin-bottom: 70px;
 }
 
-.formation_droite h4, h5{
-	margin: 2px 0 2px 0;
+.droite h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.description{
-	width: 65%;
-	margin-left: 27%;
-	margin-bottom: 10px;
-	padding: 0;
+.droite h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-
-
-										/* bloc expérience */
-.bloc_experience{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 30px 20px 100px 60px;
+.droite p {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
-										/* bloc experience gauche */
-.experience_gauche{
-	display: flex;
-	width: 25%;
-	margin-left: 2%;
-	margin-top: 30px;
+/* FOOTER */
+footer {
+  margin: 0 4% 1% 4%;
 }
 
-.experience_gauche h6{
-	margin: 2px 0 2px 0;
+/* Section recommandation */
+.recommandation {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 4% 1% 4%;
 }
 
-.experience_gauche i{
-	margin: 5px 10px 5px 0;
+.recommandation h3 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-										/* bloc experience droite */
-.experience_droite{
-	width: 65%;
-	margin-top:  30px;
+.recommandation h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.recommandation p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.experience_droite h4, h5{
-	margin-top: 2px;
-	margin-bottom: 2px;
+/* -------------------RESPONSIVE---------------------*/
+
+/* REPONSIVE LAPTOP */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: auto;
+    text-align: center;
+  }
+  /* ------ Bloc Gauche largeur ----- */
+  .contain-left {
+    width: 40%;
+  }
+  /* ------ Bloc Droit largeur ----- */
+  .contain-right {
+    width: 60%;
+  }
+
+  .contain-right section {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .contain-right article {
+    display: inherit;
+    margin-bottom: 15%;
+  }
+
+  .container .gauche,
+  .droite {
+    width: 100%;
+    margin: auto;
+  }
+
+  .date {
+    display: inherit;
+    margin-bottom: 10px;
+  }
+
+  .droite h3 {
+    margin-top: 10px;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .gauche br {
+    display: none;
+  }
+
+  footer {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  footer aside {
+    margin-bottom: 8%;
+  }
+
+  .recommandation {
+    display: inherit;
+  }
+
+  .recommandation strong {
+    font-size: 0.8em;
+  }
 }
 
-										/* bloc recommandation */
-.bloc_recommandation{
-	display: flex;
-	justify-content: space-around;
-	margin: 30px 20px 40px 60px;
+/* RESPONSIVE TABLETTE */
+
+@media screen and (max-width: 720px) {
+  .container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ------ Bloc Gauche ----- */
+  .contain-left {
+    order: 2;
+    width: 100%;
+  }
+
+  /* ------ Avatar gauche none ----- */
+  .avatar {
+    display: none;
+  }
+
+  /* ------ Taille et alignement Paragrahes Bloc Gauche ----- */
+  .contain-left h2 {
+    font-size: 1em;
+  }
+
+  .contact p {
+    text-align: center;
+  }
+
+  .contain-left p {
+    font-size: 0.9em;
+    padding: 5px 5px 5px 5px;
+  }
+
+  /* ------ Taille icones bloc gauche ----- */
+  .loisirs img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  /* ------ Bloc Droit ----- */
+  .contain-right {
+    order: 1;
+    width: 100%;
+  }
+
+  /* ------ Photo en haut centre de ma page ----- */
+  #photo_right {
+    text-align: center;
+  }
+
+  #photo_right img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border: 2px #00bcd4 solid;
+    border-radius: 250px 250px 250px 250px;
+  }
 }
 
-.bloc_recommandation h4{
-	margin-bottom: 10px;
-}
+/* RESPONSIVE SMARTPHONE */
 
-.bloc_recommandation h5{
-	margin-bottom: 20px;
-}
-.bloc_recommandation p{
-	margin-top: 5px;
-}
+@media screen and (max-width: 375px) {
+  body h1 {
+    font-size: 1.4em;
+  }
+  body h2 {
+    font-size: 1em;
+  }
 
+  body h3 {
+    font-size: 0.9em;
+  }
 
+  body h4 {
+    font-size: 0.9em;
+  }
 
-
-															/* -------------------RESPONSIVE---------------------*/
-
-@media screen and (max-width: 1024px)
-{
-	.container
-	{
-		width: auto;
-	}
-
-	.left
-	{
-		width: 40%;
-	}
-
-	.right
-	{
-		width: 60%;
-	}
-
-	.description{
-		width: 100%;
-		margin-left: 2%;
-		font-size: 1em;
-		padding: 0;
-	}
-
-	.formation_droite{
-		margin-left: 30px;
-	}
-
-	.experience_droite{
-		margin-left: 30px;
-	}
-
-}
-
-
-										/* RESPONSIVE SMARTPHONE */
-
-@media screen and (max-width: 720px)
-{
-	.container
-	{
-		width: auto;
-		flex-direction: column;
-	}
-
-								/* ------ Bloc Gauche ----- */
-	.left
-	{
-		order: 2;
-		width: 100%;
-	}
-
-
-								/* ------ Avatar gauche none ----- */
-	.avatar
-	{
-		display: none;
-	}
-
-
-								/* ------ Taille et alignement Paragrahes Bloc Gauche ----- */
-	.left h2
-	{
-		font-size: 1em;
-	}
-
-	.contact p
-	{
-		text-align: center;
-	}
-
-	.left p
-	{
-		font-size: 0.9em;
-		padding: 5px 5px 5px 5px;
-	}
-
-
-								/* ------ Taille icones bloc gauche ----- */
-	.loisirs img
-	{
-		max-width: 40px;
-		max-height: 40px;
-	}
-
-								/* ------ Bloc Droit ----- */
-	.right
-	{
-		order: 1;
-		width: 100%;
-	}
-	
-
-								/* ------ Photo en haut centrre de ma page ----- */
-	#photo_right 
-	{
-		text-align: center;
-	}
-
-	#photo_right img{
-		display: block;
-		width: 150px;
-		height: 150px;
-		margin: auto;
-		border: 2px #00BCD4 solid;
-		border-radius: 250px 250px 250px 250px;
-
-
-								/* ------ Header ----- */
-	}
-
-	header
-	{
-		text-align: center;
-		margin: 10px 5px 40px 10px;
-	}
-
-	header h1{
-		margin: 15px 0 10px 0;
-		font-size: 1.8em;
-	}
-	
-	header h1 span{
-		color: #00BCD4;
-	}
-	
-	header h2{
-		margin: 5px 0 10px 0;
-		font-size: 1.2em;
-	}
-
-
-								/* ------ Titre de mes blocs de droite ----- */
-	.title_right
-	{
-		text-align: center;
-		white-space: nowrap;
-		font-size: 1em;
-		margin: 15px 5px 25px 5px;
-	}
-
-								/* ------ Marge de mes logos Bloc droit ----- */
-	.logo{
-	margin-right: 10px;
-	}
-		
-
-								/* ------ Maincontain Droite ----- */		
-	.maincontain .bloc_formation
-	{
-		margin: 5px 0 20px 0;
-	}
-
-	.maincontain .bloc_experience
-	{
-		margin: 5px 0 20px 0;
-	}
-
-	.maincontain .bloc_recommandation
-	{
-		flex-direction: column;
-		text-align: center;
-		margin: 5px 0 20px 0;
-	}
-	
-	.maincontain h4
-	{
-		font-size: 0.8em;
-	}
-
-	.maincontain h5
-	{
-		font-size: 0.7em;
-	}
-
-	.maincontain h6
-	{
-		font-size: 0.6em;
-	}
-
-	.maincontain p
-	{
-		font-size: 0.8em;
-	}
-
-
-								/* ------ Marges bloc formation/experiences/recommandations ----- */
-	.formation_gauche
-	{
-		margin: 20px 0 0 5px;
-	}
-	
-	.formation_droite
-	{
-		margin: 20px 0 0 20px;
-	}
-
-	.description{
-		font-size: 1em;
-		margin: 0 2px 10px 5px;
-	}
-
-	.experience_gauche
-	{
-		margin: 20px 0 0 5px;
-	}
-	
-	.experience_droite
-	{
-		margin: 20px 0 0 20px;
-	}
-
-	.bloc_recommandation strong
-	{
-		font-size: 0.7em;
-	}
-
-
+  body p {
+    font-size: 0.8em;
+  }
 }
