@@ -1,27 +1,27 @@
 @font-face {
   /* police titres */
-  font-family: "Viga";
-  src: url("font/Viga-Regular.ttf") format("truetype");
+  font-family: "Caviar";
+  src: url("font/CaviarDreams.ttf") format("truetype");
 }
 
 @font-face {
-  /* police texte */
-  font-family: "Baloo";
-  src: url("font/BalooPaaji2-Regular.ttf") format("truetype");
+  /* police titres */
+  font-family: "CaviarBold";
+  src: url("font/CaviarDreams_Bold.ttf") format("truetype");
 }
 
 /* PAGE */
 body {
   margin: auto;
   border: 2px #546e7a solid;
-  font-family: "Baloo", "Trebuchet sans ms", Arial, sans-serif;
+  font-family: "Caviar", "Trebuchet sans ms", Arial, sans-serif;
   font-size: 1.4em;
 }
 
 body h1,
 h2,
 h3 {
-  font-family: "Viga", "Trebuchet sans ms", Arial, sans-serif;
+  font-family: "CaviarBold", "Trebuchet sans ms", Arial, sans-serif;
 }
 
 body h3,
@@ -99,6 +99,11 @@ h5 {
   border: 2px white solid;
   border-radius: 50%;
 }
+.fa-loisirs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 /* ----------BLOC DROIT---------- */
 .contain-right {
@@ -125,12 +130,12 @@ header h1 span {
   color: #00bcd4;
 }
 
-header h3 {
+header h2 {
   margin: 5px 0 10px 0;
   color: #263238;
 }
 
-header h3 span {
+header h2 span {
   border-bottom: 2px #00bcd4 solid;
 }
 
@@ -150,7 +155,7 @@ header h3 span {
 
 /* titres des sections */
 .title_right {
-  margin: 2% 0 6% 0;
+  margin: 30px 0 50px 0;
   padding-bottom: 10px;
   border-bottom: 3px #00bcd4 solid;
 }
@@ -215,6 +220,9 @@ footer {
   margin-bottom: 0;
 }
 
+.recommandation strong {
+  font-size: 0.8em;
+}
 /* -------------------RESPONSIVE---------------------*/
 
 /* REPONSIVE LAPTOP */
@@ -240,7 +248,7 @@ footer {
 
   .contain-right article {
     display: inherit;
-    margin-bottom: 15%;
+    margin-bottom: 80px;
   }
 
   .container .gauche,
@@ -277,10 +285,6 @@ footer {
 
   .recommandation {
     display: inherit;
-  }
-
-  .recommandation strong {
-    font-size: 0.8em;
   }
 }
 
