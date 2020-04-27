@@ -18,15 +18,11 @@ body {
   font-size: 1.4em;
 }
 
-body h1,
-h2,
-h3 {
+body h1, h2, h3 {
   font-family: "CaviarBold", "Trebuchet sans ms", Arial, sans-serif;
 }
 
-body h3,
-h4,
-h5 {
+body h3, h4, h5 {
   color: #263238;
 }
 
@@ -179,8 +175,7 @@ header h2 span {
   margin-bottom: 70px;
 }
 
-.droite h3,
-h4 {
+.droite h3, h4 {
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -357,13 +352,11 @@ footer {
     font-size: 1em;
   }
 
-  body h3,
-  h4 {
+  body h3, h4 {
     font-size: 0.9em;
   }
 
-  body h5,
-  p {
+  body h5, p {
     font-size: 0.8em;
   }
 }
