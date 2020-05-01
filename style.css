@@ -1,30 +1,31 @@
 @font-face {
   /* police titres */
-  font-family: "Caviar";
-  src: url("font/CaviarDreams.ttf") format("truetype");
+  font-family: 'Montserrat';
 }
 
 @font-face {
   /* police titres */
-  font-family: "CaviarBold";
-  src: url("font/CaviarDreams_Bold.ttf") format("truetype");
+  font-family: 'Ubuntu';
 }
 
+
 /* PAGE */
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: auto;
   border: 2px #546e7a solid;
-  font-family: "Caviar", "Trebuchet sans ms", Arial, sans-serif;
-  font-size: 25px;
+  font-family: "Montserrat", "Trebuchet MS", Arial, sans-serif;
+  font-size: 23px;
 }
 
 body h1, h2, h3 {
-  font-family: "CaviarBold", "Trebuchet sans ms", Arial, sans-serif;
+  font-family: "Ubuntu", "Trebuchet MS", Arial, sans-serif;
+   color: #263238;
 }
 
-body h3, h4, h5 {
-  color: #263238;
-}
 
 /* CONTENANT */
 .container {
@@ -53,14 +54,6 @@ body h3, h4, h5 {
   border-radius: 250px 250px 250px 250px;
 }
 
-.contain-left section {
-  width: 100%;
-}
-
-.contain-left section:nth-child(3) {
-  flex: 1;
-}
-
 /* Titres des asides gauche */
 .contain-left h2 {
   text-align: center;
@@ -79,14 +72,16 @@ body h3, h4, h5 {
 .contact a {
   color: white;
   text-decoration: none;
-}
-
-.contact a{
   word-break: break-all
 }
 
 .contact a:hover {
   color: #00bcd4;
+}
+
+/* Proportion bloc A propos */
+.contain-left section:nth-child(3) {
+  flex: 1;
 }
 
 /* Icones Loisirs */
@@ -99,6 +94,7 @@ body h3, h4, h5 {
   border: 2px white solid;
   border-radius: 50%;
 }
+
 .fa-loisirs {
   display: flex;
   flex-direction: row;
@@ -155,7 +151,7 @@ header h2 span {
 
 /* titres des sections */
 .title_right {
-  margin: 30px 0 50px 0;
+  margin: 20px 0 50px 0;
   padding-bottom: 10px;
   border-bottom: 3px #00bcd4 solid;
 }
@@ -169,6 +165,7 @@ header h2 span {
   width: 25%;
   margin-right: 25px;
 }
+
 .date {
   display: flex;
   margin-top: 0;
@@ -191,14 +188,14 @@ header h2 span {
 
 /* FOOTER */
 footer {
-  margin: 0 4% 1% 4%;
+  margin: 0 4% 2% 4%;
 }
 
 /* Section recommandation */
 .recommandation {
   display: flex;
-  justify-content: space-around;
-  margin: 0 4% 1% 4%;
+  justify-content: space-evenly;
+  margin: 0 4% 0 4%;
 }
 
 .recommandation h3 {
@@ -218,13 +215,26 @@ footer {
 .recommandation strong {
   font-size: 0.8em;
 }
+
 /* -------------------RESPONSIVE---------------------*/
+
+/* Reponsive ajustement between laptop and max-width 1250px */
+@media screen and (max-width: 1250px){
+  .recommandation {
+    display: block;
+    text-align: center;
+  }
+
+  .recommandation_left, .recommandation_right{
+    margin-bottom: 50px;
+  }
+}
 
 /* REPONSIVE LAPTOP */
 
 @media screen and (max-width: 1024px) {
   body{
-    font-size: 1.4rem;
+    font-size: 22px;
   }
 
   .container {
@@ -246,17 +256,17 @@ footer {
   }
 
   .contain-right article {
-    display: inherit;
+    display: block;
     margin-bottom: 80px;
   }
 
-  .container .gauche, .droite {
+ .gauche, .droite {
     width: 100%;
     margin: auto;
   }
 
   .date {
-    display: inherit;
+    display: block;
     margin-bottom: 10px;
   }
 
@@ -283,16 +293,13 @@ footer {
     margin-bottom: 20px;
   }
 
-  .recommandation {
-    display: inherit;
-  }
 }
 
 /* RESPONSIVE TABLETTE */
 
 @media screen and (max-width: 720px) {
   body{
-    font-size: 1.3rem;
+    font-size: 21px;
   }
 
   .container {
@@ -325,7 +332,6 @@ footer {
   }
 
   .contain-left p {
-    font-size: 0.9em;
     padding: 5px 5px 5px 5px;
   }
 
@@ -350,10 +356,3 @@ footer {
   }
 }
 
-/* RESPONSIVE SMARTPHONE */
-
-@media screen and (max-width: 375px) {
-  body{
-    font-size: 1.2rem;
-  }
-}
