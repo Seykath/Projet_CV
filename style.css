@@ -218,7 +218,7 @@ footer {
 
 /* -------------------RESPONSIVE---------------------*/
 
-/* Reponsive ajustement between laptop and max-width 1250px */
+/* Reponsive ajustement between laptop and max-width 1150px */
 @media screen and (max-width: 1150px){
   .recommandation {
     display: block;
