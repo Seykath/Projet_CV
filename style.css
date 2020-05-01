@@ -158,7 +158,7 @@ header h2 span {
 
 /* icônes */
 .icon {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .gauche {
@@ -299,7 +299,7 @@ footer {
 
 @media screen and (max-width: 720px) {
   body{
-    font-size: 21px;
+    font-size: 1em;
   }
 
   .container {
