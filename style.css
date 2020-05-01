@@ -251,6 +251,7 @@ footer {
   .contain-right {
     width: 60%;
     margin-left: 5%;
+    margin-right: 3%;
   }
 
   .contain-right section {
@@ -292,6 +293,10 @@ footer {
     margin-bottom: 20px;
   }
 
+  .recommandation_left, .recommandation_right{
+    width: 100%;
+  }
+
 }
 
 /* RESPONSIVE TABLETTE / MOBILE */
@@ -318,7 +323,7 @@ footer {
   .contain-right {
     order: 1;
     width: 100%;
-    margin: 0 2px 0 2px;
+    margin: 0;
   }
 
   /* ------ Avatar gauche none ----- */
@@ -365,5 +370,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
 }
 
