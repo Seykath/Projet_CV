@@ -111,7 +111,7 @@ body h1, h2, h3 {
 }
 
 header {
-  margin: 8% 4% 10% 4%;
+  margin: 8% 4% 10% 8%;
 }
 
 header h1 {
@@ -240,6 +240,10 @@ footer {
     font-size: 22px;
   }
 
+  header{
+    margin-left: 0;
+    margin-right: 0; 
+  }
   .container {
     width: auto;
   }
@@ -255,8 +259,8 @@ footer {
   }
 
   .contain-right section {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .contain-right article {
@@ -285,8 +289,8 @@ footer {
   /* FOOTER */
 
   footer {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   footer aside {
@@ -324,6 +328,7 @@ footer {
     order: 1;
     width: 100%;
     margin: 0;
+    padding: 0 2px 0 2px;
   }
 
   /* ------ Avatar gauche none ----- */
