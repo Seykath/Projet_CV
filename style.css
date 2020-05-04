@@ -1,10 +1,9 @@
-/* font
+/* ----- font -----
     Police TEXTE
   font-family: 'Montserrat';
     Police TITRES
   font-family: 'Ubuntu'; 
 */
-
 
 /* PAGE */
 *{
@@ -29,6 +28,11 @@ body h1, h2, h3 {
   display: flex;
 }
 
+/* Header Mobile */
+.mobile-title{
+  display: none;
+}
+
 /* ----------BLOC GAUCHE---------- */
 .contain-left {
   display: flex;
@@ -38,7 +42,7 @@ body h1, h2, h3 {
   background-color: #263238;
 }
 
-/* Aside avatar */
+/* Avatar */
 .avatar {
   text-align: center;
   margin: 50px 0 50px 0;
@@ -51,7 +55,7 @@ body h1, h2, h3 {
   border-radius: 250px 250px 250px 250px;
 }
 
-/* Titres des asides gauche */
+/* Titres des sections gauche */
 .contain-left h2 {
   text-align: center;
   margin-top: 0;
@@ -76,7 +80,7 @@ body h1, h2, h3 {
   color: #00bcd4;
 }
 
-/* Proportion bloc A propos */
+/* Proportion bloc a propos */
 .contain-left section:nth-child(3) {
   flex: 1;
 }
@@ -106,10 +110,6 @@ body h1, h2, h3 {
 }
 
 /* header */
-#photo {
-  display: none;
-}
-
 header {
   margin: 8% 4% 10% 8%;
 }
@@ -132,6 +132,7 @@ header h2 span {
   border-bottom: 2px #00bcd4 solid;
 }
 
+/* Marges conteneur right */
 .contain-right section {
   margin: 0 4% 1% 8%;
 }
@@ -158,6 +159,7 @@ header h2 span {
   margin-right: 8px;
 }
 
+/* div gauche des articles */
 .gauche {
   width: 25%;
   margin-right: 25px;
@@ -168,6 +170,7 @@ header h2 span {
   margin-top: 0;
 }
 
+/* div droite des articles */
 .droite {
   width: 75%;
   margin-bottom: 70px;
@@ -216,10 +219,13 @@ footer {
   font-size: 0.8em;
 }
 
+
 /* -------------------RESPONSIVE---------------------*/
+
 
 /* Reponsive ajustement between laptop and max-width 1150px */
 @media screen and (max-width: 1150px){
+
   .recommandation {
     display: block;
   }
@@ -233,25 +239,34 @@ footer {
   }
 }
 
-/* REPONSIVE LAPTOP */
 
+/* REPONSIVE LAPTOP */
 @media screen and (max-width: 1024px) {
   body{
     font-size: 22px;
   }
 
+  .container {
+    width: auto;
+  }
+
+  /* ------ Bloc Gauche ----- */
+  .contain-left {
+    width: 40%;
+  }
+
+  .contain-left p{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Header */
   header{
     margin-left: 0;
     margin-right: 0; 
   }
-  .container {
-    width: auto;
-  }
-  /* ------ Bloc Gauche largeur ----- */
-  .contain-left {
-    width: 40%;
-  }
-  /* ------ Bloc Droit largeur ----- */
+
+  /* ------ Bloc Droit ----- */
   .contain-right {
     width: 60%;
     margin-left: 5%;
@@ -287,7 +302,6 @@ footer {
   }
 
   /* FOOTER */
-
   footer {
     margin-left: 0;
     margin-right: 0;
@@ -300,11 +314,10 @@ footer {
   .recommandation_left, .recommandation_right{
     width: 100%;
   }
-
 }
 
-/* RESPONSIVE TABLETTE / MOBILE */
 
+/* RESPONSIVE TABLETTE / MOBILE */
 @media screen and (max-width: 720px) {
   body{
     font-size: 19px;
@@ -317,27 +330,49 @@ footer {
     text-align: center;
   }
 
+  /* Header mobile */
+  .mobile-title{
+    display: block;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .mobile-title h1 {
+  margin: 15px 0 10px 0;
+  font-size: 2.5em;
+  }
+
+  .mobile-title h1 span {
+  color: #00bcd4;
+  }
+
+  .mobile-title h2 {
+  margin: 5px 0 10px 0;
+  color: #263238;
+  }
+
+  .mobile-title h2 span {
+  border-bottom: 2px #00bcd4 solid;
+  }
+
+  header{
+    display: none;
+  }
+
   /* ------ Bloc Gauche ----- */
   .contain-left {
-    order: 2;
     width: 100%;
+    margin-bottom: 50px;
   }
 
   /* ------ Bloc Droit ----- */
   .contain-right {
-    order: 1;
     width: 100%;
     margin: 0;
     padding: 0 2px 0 2px;
   }
 
-  /* ------ Avatar gauche none ----- */
-  .avatar {
-    display: none;
-  }
-
   /* ------ Taille et alignement Paragrahes Bloc Gauche ----- */
-
   .contact p {
     text-align: center;
   }
@@ -352,29 +387,16 @@ footer {
     max-height: 50px;
   }
 
-  /* ------ Photo en haut centre de ma page ----- */
-  #photo_right {
-    text-align: center;
-  }
-
-  #photo_right img {
-    display: block;
-    width: 170px;
-    height: 170px;
-    margin: auto;
-    border: 2px #00bcd4 solid;
-    border-radius: 250px 250px 250px 250px;
-  }
-
-    .icon {
+  /* Masquer les icon en version mobile */
+  .icon {
     display: none;
   }
 
+  /* Bloc recommandation */
   .recommandation{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
 }
 
